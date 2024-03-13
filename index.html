@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eaz My Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #3b3a4e; /* Add a background color */
+      min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      margin: 10px 20px; /* Add space around the border */
+      border-radius: 15px; /* Add border-radius for a curved border */
+      overflow: hidden;
+      color:#9b3a57 ;
+      background-color: #333; /* Set the background color to match the header */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .card-container-wrapper {
+      background-color: white;
+      border-radius: 20px;
+      margin: 20px; /* Add space around the card container */
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+      flex-grow: 1; /* Allow the cards to take remaining vertical space */
+      padding: 20px; /* Add padding for spacing */
+    }
+
+    .card {
+      width: 250px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card-content h3,
+    .card-content p {
+      text-align: center; /* Center text within the card content */
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <h1>Eaz My Learn</h1>
+    <a href="#">Home</a>
+    <a href="#">Create</a>
+    <a href="#">My Course</a>
+  </nav>
+
+  <div class="card-container-wrapper">
+    <div class="card-container">
+      <!-- Cards go here -->
+      <div class="card">
+        <div class="card-content">
+          <img src="calculating.png" alt="Card Image">
+          <h3>Maths</h3>
+          <p>Some text describing the content of the card.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-content">
+          <img src="innovation.png" alt="Card Image">
+          <h3>Science</h3>
+          <p>Some text describing the content of the card.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-content">
+          <img src="notes.png" alt="Card Image">
+          <h3>Notes</h3>
+          <p>Some text describing the content of the card.</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-content">
+          <img src="eng.png" alt="Card Image">
+          <h3>English</h3>
+          <p>Some text describing the content of the card.</p>
+        </div>
+      </div>
+      <!-- ... -->
+    </div>
+  </div>
+
+  <footer>
+    <p>About Us: Your about us text goes here.</p>
+    <p>Contact Details: Your contact details go here.</p>
+    <p>&copy; 2024 Eaz My Learn. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
